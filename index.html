@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./images/favicon-32x32.png"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <link rel="stylesheet" href="/dist/style.css" />
+
+      <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+   </head>
+   <body>
+      <main>
+         <div
+            class="card_image_desktop"
+            style="background-image: url('/images/hero-desktop.jpg')"
+         ></div>
+
+         <div class="">
+            <nav class="container1">
+               <img src="/images/logo.svg" alt="" />
+            </nav>
+
+            <div
+               class="card_image_mobile"
+               style="background-image: url('/images/hero-mobile.jpg')"
+            ></div>
+
+            <div class="card_text container2">
+               <h1>We're <span>coming soon</span></h1>
+               <p>
+                  Hello fellow shoppers! We're currently building our new
+                  fashion store. Add your email below to stay up-to-date with
+                  announcements and our launch deals.
+               </p>
+            </div>
+
+            <form id="form" action="#" class="card_email container3">
+               <div class="input-control">
+                  <input
+                     class="input_text"
+                     id="email"
+                     type="text"
+                     value=""
+                     placeholder="Email Address"
+                  />
+                  <div class="input_submit">
+                     <a href="#" type="submit" id="submit"></a>
+                  </div>
+               </div>
+               <div id="text" class="text"></div>
+            </form>
+         </div>
+      </main>
+
+      <footer>
+         <p class="attribution">
+            Challenge by
+            <a
+               href="https://www.frontendmentor.io?ref=challenge"
+               target="_blank"
+               >Frontend Mentor</a
+            >. Coded by
+            <a
+               href="https://www.frontendmentor.io/profile/jibreel1"
+               target="_blank"
+               >Jibreel</a
+            >.
+         </p>
+      </footer>
+
+      <script src="/app/js/script.js"></script>
+   </body>
+</html>

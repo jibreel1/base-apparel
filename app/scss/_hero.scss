@@ -1,0 +1,192 @@
+.card {
+   &_image_mobile {
+      height: 15.625rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      @include point-up(medium) {
+         height: 25rem;
+      }
+
+      @include point-up(large) {
+         display: none;
+      }
+
+   }
+
+   &_text {
+      text-align: center;
+
+      @include point-up(large) {
+         text-align: left;
+      }
+
+      h1 {
+         text-transform: uppercase;
+         color: $desaturatedRed;
+         padding-top: 1.5625rem;
+         font-weight: 300;
+         font-size: 1.875rem;
+         letter-spacing: 1rem;
+
+         @include point-up(large) {
+            padding: 0;
+            font-size: 3rem;
+         }
+
+         span {
+            color: $darkGrayishRed;
+            font-weight: 600;
+         }
+      }
+
+      p {
+         margin-top: 2rem;
+         color: $desaturatedRed;
+         font-size: 0.875rem;
+         line-height: 1.5;
+         font-weight: 400;
+
+         @include point-up(large) {
+            margin-top: 2.625rem;
+         }
+      }
+   }
+
+   &_email {
+      margin-top: 3.125rem;
+
+      .input-control {
+         display: flex;
+         position: relative;
+         margin-right: -4.7rem;
+
+         @include point-up(large) {
+            margin-right: 0;
+         }
+
+         &.invalid::after {
+            content: "";
+            position: absolute;
+            z-index: 1000;
+            right: 170px;
+            top: 12px;
+            width: 24px;
+            height: 24px;
+            background-image: url("/images/icon-error.svg");
+            background-size: cover;
+
+            @include point-up(large) {
+               right: 260px;
+               top: 15px;
+            }
+         }
+      }
+
+      .input_text {
+         position: relative;
+         flex: 3;
+         width: 100%;
+         height: 3rem;
+         border-radius: 50px;
+         border: 1px solid $desaturatedRed;
+         background-color: hsl(0, 100%, 98%);
+         padding: 0 1.5rem;
+         outline: 0;
+
+         @include point-up(large) {
+            height: 3.4375rem;
+         }
+      }
+
+      .invalid input {
+         border: 2px solid #de6a6b;
+      }
+
+      .input_submit {
+         flex: 1;
+         position: relative;
+         top: 0;
+         right: 4.71rem;
+         background: linear-gradient(
+            135deg,
+            hsl(0, 80%, 86%),
+            hsl(0, 74%, 74%)
+         );
+         cursor: pointer;
+         border-radius: 50px;
+         width: 4.0625rem;
+         box-shadow: 0 15px 20px hsla(0, 36%, 70%, 0.5);
+         transition: transform 250ms ease-in-out;
+
+         @include point-up(large) {
+            left: -7.6875rem;
+         }
+
+         &:hover {
+            transform: scale(1.1);
+         }
+
+         &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.25);
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+         }
+
+         &:hover::before {
+            opacity: 1;
+         }
+
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50px;
+            background-image: url("/images/icon-arrow.svg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+         }
+      }
+   }
+
+   &_image_desktop {
+      @include point-up(large) {
+         order: 2;
+         width: 38.125rem;
+         height: 50rem;
+         float: right;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+
+   }
+}
+
+form {
+   height: 4.4375rem;
+
+   @include point-up(large) {
+      margin-top: 0;
+   }
+}
+.text {
+   font-size: 11px;
+   margin: 0.625rem 1.5rem;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr auto;
+}

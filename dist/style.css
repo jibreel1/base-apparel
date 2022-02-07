@@ -1,0 +1,349 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, white, #fff5f5);
+  overflow-x: hidden;
+}
+
+body ::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+body :-ms-input-placeholder {
+  color: #ce9797;
+}
+
+body ::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+body ::placeholder {
+  color: #ce9797;
+}
+
+@media (min-width: 64em) {
+  body {
+    position: relative;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -53%;
+    left: -92%;
+    z-index: -1;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container1 {
+  margin: 2rem;
+}
+
+@media (min-width: 64em) {
+  .container1 {
+    margin: 4.125rem 0 0 9.375rem;
+  }
+}
+
+.container2 {
+  margin: 2.625rem;
+}
+
+@media (min-width: 40em) {
+  .container2 {
+    margin: 4.125rem 9.375rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container2 {
+    margin-left: 10.5rem;
+    margin-right: 13.75rem;
+    margin-top: 8.625rem;
+    margin-bottom: 0;
+  }
+}
+
+.container3 {
+  margin: 2.625rem 2.625rem 2.625rem 2.625rem;
+}
+
+@media (min-width: 40em) {
+  .container3 {
+    margin: 4.125rem 9.375rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container3 {
+    margin-left: 10.5rem;
+    margin-right: 7.5rem;
+    margin-top: 8.625rem;
+    margin-bottom: 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.card_image_mobile {
+  height: 15.625rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (min-width: 40em) {
+  .card_image_mobile {
+    height: 25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .card_image_mobile {
+    display: none;
+  }
+}
+
+.card_text {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .card_text {
+    text-align: left;
+  }
+}
+
+.card_text h1 {
+  text-transform: uppercase;
+  color: #ce9797;
+  padding-top: 1.5625rem;
+  font-weight: 300;
+  font-size: 1.875rem;
+  letter-spacing: 1rem;
+}
+
+@media (min-width: 64em) {
+  .card_text h1 {
+    padding: 0;
+    font-size: 3rem;
+  }
+}
+
+.card_text h1 span {
+  color: #413a3a;
+  font-weight: 600;
+}
+
+.card_text p {
+  margin-top: 2rem;
+  color: #ce9797;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (min-width: 64em) {
+  .card_text p {
+    margin-top: 2.625rem;
+  }
+}
+
+.card_email {
+  margin-top: 3.125rem;
+}
+
+.card_email .input-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-right: -4.7rem;
+}
+
+@media (min-width: 64em) {
+  .card_email .input-control {
+    margin-right: 0;
+  }
+}
+
+.card_email .input-control.invalid::after {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  right: 170px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icon-error.svg");
+  background-size: cover;
+}
+
+@media (min-width: 64em) {
+  .card_email .input-control.invalid::after {
+    right: 260px;
+    top: 15px;
+  }
+}
+
+.card_email .input_text {
+  position: relative;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  width: 100%;
+  height: 3rem;
+  border-radius: 50px;
+  border: 1px solid #ce9797;
+  background-color: #fff5f5;
+  padding: 0 1.5rem;
+  outline: 0;
+}
+
+@media (min-width: 64em) {
+  .card_email .input_text {
+    height: 3.4375rem;
+  }
+}
+
+.card_email .invalid input {
+  border: 2px solid #de6a6b;
+}
+
+.card_email .input_submit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: 0;
+  right: 4.71rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+  border-radius: 50px;
+  width: 4.0625rem;
+  -webkit-box-shadow: 0 15px 20px rgba(206, 151, 151, 0.5);
+          box-shadow: 0 15px 20px rgba(206, 151, 151, 0.5);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .card_email .input_submit {
+    left: -7.6875rem;
+  }
+}
+
+.card_email .input_submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card_email .input_submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+}
+
+.card_email .input_submit:hover::before {
+  opacity: 1;
+}
+
+.card_email .input_submit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  background-image: url("/images/icon-arrow.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 64em) {
+  .card_image_desktop {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 38.125rem;
+    height: 50rem;
+    float: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+form {
+  height: 4.4375rem;
+}
+
+@media (min-width: 64em) {
+  form {
+    margin-top: 0;
+  }
+}
+
+.text {
+  font-size: 11px;
+  margin: 0.625rem 1.5rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+}
+
+nav img {
+  height: 1.3125rem;
+}
+/*# sourceMappingURL=style.css.map */

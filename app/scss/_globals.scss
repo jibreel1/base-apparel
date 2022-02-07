@@ -1,0 +1,98 @@
+html {
+   font-size: 100%;
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Josefin Sans", sans-serif;
+   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+   overflow-x: hidden;
+   ::placeholder {
+      color: $desaturatedRed;
+   }
+
+   @include point-up(large) {
+      position: relative;
+      background-image: url("/images/bg-pattern-desktop.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 150%;
+         height: 150%;
+         top: -53%;
+         left: -92%;
+         z-index: -1;
+         background-image: url("/images/bg-pattern-desktop.svg");
+         // background-size: contain;
+         background-repeat: no-repeat;
+         transform: rotate(180deg);
+      }
+   }
+}
+
+//texts
+
+h1,
+h2,
+h3,
+p {
+   margin: 0;
+}
+
+.container1 {
+   margin: 2rem;
+
+   @include point-up(large) {
+      margin: 4.125rem 0 0 9.375rem;
+   }
+}
+.container2 {
+   margin: 2.625rem;
+
+   @include point-up(medium) {
+      margin: 4.125rem 9.375rem;
+   }
+
+   @include point-up(large) {
+      margin-left: 10.5rem;
+      margin-right: 13.75rem;
+      margin-top: 8.625rem;
+      margin-bottom: 0;
+   }
+
+}
+
+.container3 {
+   margin: 2.625rem 2.625rem 2.625rem 2.625rem;
+
+   @include point-up(medium) {
+      margin: 4.125rem 9.375rem;
+   }
+
+   @include point-up(large) {
+      margin-left: 10.5rem;
+      margin-right: 7.5rem;
+      margin-top: 8.625rem;
+      margin-bottom: 0;
+   }
+
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
