@@ -16,7 +16,6 @@ body {
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   background: linear-gradient(135deg, white, #fff5f5);
-  overflow-x: hidden;
 }
 
 body ::-webkit-input-placeholder {
@@ -106,7 +105,7 @@ p {
 @media (min-width: 64em) {
   .container3 {
     margin-left: 10.5rem;
-    margin-right: 7.5rem;
+    margin-right: 13.75rem;
     margin-top: 8.625rem;
     margin-bottom: 0;
   }
@@ -190,11 +189,8 @@ p {
 }
 
 .card_email .input-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  margin-right: -4.7rem;
+  width: 100%;
 }
 
 @media (min-width: 64em) {
@@ -207,7 +203,7 @@ p {
   content: "";
   position: absolute;
   z-index: 1000;
-  right: 170px;
+  right: 70px;
   top: 12px;
   width: 24px;
   height: 24px;
@@ -217,23 +213,19 @@ p {
 
 @media (min-width: 40em) {
   .card_email .input-control.invalid::after {
-    right: 220px;
+    right: 120px;
     top: 15px;
   }
 }
 
 @media (min-width: 64em) {
   .card_email .input-control.invalid::after {
-    right: 220px;
+    right: 120px;
     top: 15px;
   }
 }
 
 .card_email .input_text {
-  position: relative;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
   width: 100%;
   height: 3rem;
   border-radius: 50px;
@@ -254,12 +246,10 @@ p {
 }
 
 .card_email .input_submit {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 48px;
   position: relative;
-  top: 0;
-  right: 3.75em;
+  float: right;
+  top: -3em;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   cursor: pointer;
   border-radius: 50px;
@@ -272,9 +262,17 @@ p {
           box-shadow: 0 15px 10px rgba(206, 151, 151, 0.5);
 }
 
+@media (min-width: 40em) {
+  .card_email .input_submit {
+    width: 100px;
+  }
+}
+
 @media (min-width: 64em) {
   .card_email .input_submit {
-    left: -5.3875em;
+    width: 100px;
+    top: -3.4375em;
+    height: 55px;
   }
 }
 
@@ -291,6 +289,7 @@ p {
   bottom: 0;
   left: 0;
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.25);
   opacity: 0;
   -webkit-transition: opacity 150ms ease-in-out;
   transition: opacity 150ms ease-in-out;

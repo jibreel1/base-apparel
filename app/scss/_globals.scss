@@ -14,7 +14,7 @@ body {
    padding: 0;
    font-family: "Josefin Sans", sans-serif;
    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-   overflow-x: hidden;
+   // overflow-x: hidden;
    ::placeholder {
       color: $desaturatedRed;
    }
@@ -82,7 +82,7 @@ p {
 
    @include point-up(large) {
       margin-left: 10.5rem;
-      margin-right: 7.5rem;
+      margin-right: 13.75rem;
       margin-top: 8.625rem;
       margin-bottom: 0;
    }
