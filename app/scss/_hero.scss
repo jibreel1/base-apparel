@@ -113,7 +113,7 @@
          flex: 1;
          position: relative;
          top: 0;
-         right: 4.71rem;
+         right: 3.75em;
          background: linear-gradient(
             135deg,
             hsl(0, 80%, 86%),
@@ -121,12 +121,12 @@
          );
          cursor: pointer;
          border-radius: 50px;
-         width: 4.0625rem;
-         box-shadow: 0 15px 20px hsla(0, 36%, 70%, 0.5);
+         width: 4.0625em;
          transition: transform 250ms ease-in-out;
+         box-shadow: 0 15px 10px hsla(0, 36%, 70%, 0.5);
 
          @include point-up(large) {
-            left: -5.3875rem;
+            left: -5.3875em;
          }
 
          &:hover {
@@ -161,6 +161,7 @@
             background-size: auto;
             background-repeat: no-repeat;
             background-position: center center;
+            
          }
       }
    }

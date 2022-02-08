@@ -259,22 +259,22 @@ p {
           flex: 1;
   position: relative;
   top: 0;
-  right: 4.71rem;
+  right: 3.75em;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   cursor: pointer;
   border-radius: 50px;
-  width: 4.0625rem;
-  -webkit-box-shadow: 0 15px 20px rgba(206, 151, 151, 0.5);
-          box-shadow: 0 15px 20px rgba(206, 151, 151, 0.5);
+  width: 4.0625em;
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-box-shadow: 0 15px 10px rgba(206, 151, 151, 0.5);
+          box-shadow: 0 15px 10px rgba(206, 151, 151, 0.5);
 }
 
 @media (min-width: 64em) {
   .card_email .input_submit {
-    left: -5.3875rem;
+    left: -5.3875em;
   }
 }
 
