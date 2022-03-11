@@ -34,28 +34,6 @@ body ::placeholder {
   color: #ce9797;
 }
 
-@media (min-width: 64em) {
-  body {
-    position: relative;
-    background-image: url("/images/bg-pattern-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  body::before {
-    content: "";
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    top: -53%;
-    left: -92%;
-    z-index: -1;
-    background-image: url("/images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-
 h1,
 h2,
 h3,
@@ -323,6 +301,14 @@ p {
     float: right;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 64em) {
+  .card_background {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
